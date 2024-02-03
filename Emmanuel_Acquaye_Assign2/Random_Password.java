@@ -41,7 +41,7 @@ public class Random_Password {
     }
 
     public static String generatePassword(int minlen, int minSpecialchar, int minUpper, int minLower, int minDigit, String SpecChar) {
-        // create arrays to store lowercase, uppercase, and special characters
+        // creates arrays to store lowercase, uppercase, and special characters
 
         char[] lowercase= new char[minLower*2];
         char[] uppercase= new char[minUpper*2];
@@ -49,23 +49,23 @@ public class Random_Password {
         String passwordgen;
         String DigitString = "";
 
-        // Append to the SpecialCharacter array with the user-specified special characters
+        // The below code appends to the SpecialCharacter array with the user-specified special characters
         for (int x = 0; x < SpecChar.length(); x++) {
             SpecialCharacter[x] = SpecChar.charAt(x);
         }
 
-        // Append to the Lowercase array with random lowercase characters
+        // The below code appends to the Lowercase array with random lowercase characters
         for (int i = 0; i <= minLower; i++) {
             char randomchar = (char) ('a' + Math.random()* ('z' - 'a' +1));
             lowercase[i] += randomchar;
 
         }
-        // Append to the Uppercase array with random uppercase characters
+        // The below code appends to the Uppercase array with random uppercase characters
         for (int x = 0; x <= minUpper;x++) {
             char randomchar = (char) ('A' + Math.random()* ('Z' - 'A' +1));
             uppercase[x] = randomchar;
         }
-        // Concatenate random numbers to the DigitString with random digits 
+        // The below code concatenates random numbers to the DigitString variable
         for (int y = 0; y <= minDigit; y++) {
             int randomChar = (int)(Math.random() * 10);
             DigitString += randomChar;

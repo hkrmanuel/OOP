@@ -2,7 +2,7 @@ package Emmanuel_Acquaye_Assign2;
 
 import java.util.Scanner;
 
-public class Random_Password {
+public class RandomPasswordGenerator {
 
     // The class generates a random password based on user inpur
     public static void main(String[] args) {
@@ -43,9 +43,9 @@ public class Random_Password {
     public static String generatePassword(int minlen, int minSpecialchar, int minUpper, int minLower, int minDigit, String SpecChar) {
         // creates arrays to store lowercase, uppercase, and special characters
 
-        char[] lowercase= new char[minLower*2];
-        char[] uppercase= new char[minUpper*2];
-        char[] SpecialCharacter= new char [minSpecialchar *2];
+        char[] lowercase= new char[minLower*10];
+        char[] uppercase= new char[minUpper*10];
+        char[] SpecialCharacter= new char [minSpecialchar *10];
         String passwordgen;
         String DigitString = "";
 

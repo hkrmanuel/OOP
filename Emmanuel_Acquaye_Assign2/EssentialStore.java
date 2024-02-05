@@ -112,12 +112,9 @@ public class EssentialStore {
             balance -=numberof1p * 0.01;
             System.out.println(numberof1p +" "+ "GH\u20B50.01p");
         }  
+        
         // return the customer change amount  
         return customerChange;
-
-        
-
-
     }
 }
   

@@ -3,6 +3,10 @@ package Emmanuel_Acquaye_Assign2;
 // import Scannr method
 import java.util.Scanner;
 
+/*
+ * This program calculates the customer's change and displays the denominations needed to be cummulated to acquire that changhe in Ghana Currency
+ */
+
 public class EssentialStore {
     public static void main(String[] args) {
         // create a scanner object to read user input

@@ -1,7 +1,10 @@
 package Emmanuel_Acquaye_Assign2;
 
 import java.util.Scanner;
-
+/*
+ * This program generates a random passwords 
+ * which are suppose to fit specific critireas set
+ */
 public class RandomPasswordGenerator {
 
     // The class generates a random password based on user inpur
@@ -42,47 +45,35 @@ public class RandomPasswordGenerator {
 
     public static String generatePassword(int minlen, int minSpecialchar, int minUpper, int minLower, int minDigit, String SpecChar) {
         // creates arrays to store lowercase, uppercase, and special characters
-
-        char[] lowercase= new char[minLower*10];
-        char[] uppercase= new char[minUpper*10];
-        char[] SpecialCharacter= new char [minSpecialchar *10];
-        String passwordgen;
-        String DigitString = "";
+        String passwordgen = "";
 
         // The below code appends to the SpecialCharacter array with the user-specified special characters
-        for (int x = 0; x < SpecChar.length(); x++) {
-            SpecialCharacter[x] = SpecChar.charAt(x);
-        }
+
 
         // The below code appends to the Lowercase array with random lowercase characters
         for (int i = 0; i <= minLower; i++) {
             char randomchar = (char) ('a' + Math.random()* ('z' - 'a' +1));
-            lowercase[i] += randomchar;
+            passwordgen += randomchar;
 
         }
         // The below code appends to the Uppercase array with random uppercase characters
         for (int x = 0; x <= minUpper;x++) {
             char randomchar = (char) ('A' + Math.random()* ('Z' - 'A' +1));
-            uppercase[x] = randomchar;
+            passwordgen += randomchar;
         }
         // The below code concatenates random numbers to the DigitString variable
         for (int y = 0; y <= minDigit; y++) {
             int randomChar = (int)(Math.random() * 10);
-            DigitString += randomChar;
+            passwordgen += randomChar;
         }
         // Append to the Special Character array with random special characters from the user-specified character set
         for (int y = 0; y <= minSpecialchar; y++) {
             char randomChar = SpecChar.charAt((int)(Math.random() * SpecChar.length()));
-            SpecialCharacter[y] = randomChar;
+            passwordgen += randomChar;
 
         }
     
-        String lowerString= new String(lowercase);
-        String upperString  = new String(uppercase);
-        String Specialstring = new String(SpecialCharacter);
         
-        // generate the final password by concatenating the lowercase, uppercase, special character, and digit arrays
-        passwordgen = lowerString + upperString+ Specialstring + DigitString;
 
         // ensure that the password meets the minimum length requirement
         while(passwordgen.length()<= minlen) {
@@ -137,7 +128,7 @@ public class RandomPasswordGenerator {
                     continue;
                 }
             }
-    }
+        }
         //checks if the minimum length of lowercases is met
         if (lowerCount >= minLower){
             NoofVerified += 1;
@@ -170,14 +161,18 @@ public class RandomPasswordGenerator {
         if (digitCount >= minDigit){
             NoofVerified += 1;
         }
+
+
             
-            //verify if all the rules are met
-            if (NoofVerified == 5){
-                return valid;
-            }
-            else{
-                return NotValid;
-            }
+        //verify if all the rules are met
+        if (NoofVerified == 5){
+            return valid;
+        }
+        else{
+            return NotValid;
+        }
+        
+       
     }
 }
     

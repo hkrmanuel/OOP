@@ -23,7 +23,7 @@ public class TreasuryBillsYield {
         System.out.print("Enter The Amount Added In Each Period After First Deposit:");
         double ConstantDeposit = input.nextDouble();
         System.out.println("");
-        System.out.print("Enter The Number Of Periods The Investent Would Accure:");
+        System.out.print("Enter The Number Of Periods The Investent Would Accrue:");
         int numberOfPeriods = input.nextInt();
         System.out.println("");
         double TotalInterest = 0;  
@@ -39,7 +39,6 @@ public class TreasuryBillsYield {
         System.out.printf("The Total Interest is \u20B5%4.2f", TotalInterest);
         
         input.close();
-
         }
     }
     
@@ -47,9 +46,10 @@ public class TreasuryBillsYield {
         double PeriodRate = (yrRate/100)/PeriodsPerYear; // Calculate the period rate
         double TotalValue =  principal; // Initialize TotalValue to the principal
         double TotalInterest = 0; // Initialize TotalInterest to 0
-
+        
+        //checks if total value is negative and displays error message
         if (TotalValue< 0){
-            System.out.println("Error! You entered a negative amount.");
+            System.out.println("Error! You entered a negative amount."); 
         }
         else{
         TotalInterest += TotalValue * PeriodRate; // Calculate the interest for the first period
@@ -64,9 +64,6 @@ public class TreasuryBillsYield {
             TotalValue += TotalInterest;  // Add the interest to the total value
             
         }
-        
-    
-    
     }
     return TotalValue;  // Return the total value of the investment
     

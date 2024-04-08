@@ -1,7 +1,9 @@
 public class FoodDelivery{
     private int noOfOrders;
     private static OrderClass[] orderlist;
-    public static UserClass[] users= new UserClass[10];
+
+    public static UserClass users;
+
 
     FoodDelivery(){
     
@@ -34,10 +36,7 @@ public class FoodDelivery{
     }
 
     public boolean addAccount(UserClass account){
-        for (int i = 0; i < users.length; i++){
-            users[i] = account;
-            break;
-        }
+        users = account;
         return true;
     }
 }

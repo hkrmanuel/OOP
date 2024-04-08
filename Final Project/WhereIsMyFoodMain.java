@@ -103,10 +103,14 @@ public class WhereIsMyFoodMain {
 
                 break;
             case 2:
-                FoodDelivery.users.toString();
-                
+                System.out.println(FoodDelivery.users.toString());
                 break;
+
+            case 3:
+                break;
+                
             }  
+            
             
         
         

@@ -1,0 +1,20 @@
+Pancakes			3 
+Fried_Eggs			3 
+Bread_Bun			 3  
+Plain_Rice			20 
+Fried_Rice			20 
+Jollof_Rice			20 
+Waakye_Rice			20 
+Spaghetti			20 
+Pasta_Jollof			20 
+Beans_Stew_&_Plantain   20 
+BoiledYam_&_Stew		20 
+Ampesi(BoiledPlantain)  20 
+Fufu_&_Soup			    20 
+Banku				    20 
+RiceBalls			    20  
+French_Fries	        32 
+			 
+
+ 
+

@@ -1,0 +1,14 @@
+English_Breakfast		   15 
+Plain_Rice			   20 
+Fried_Rice			   25 
+Jollof_Rice			   20 
+Waakye_Rice			   25
+Vermicelli_Rice		   20 
+Braised_Rice			   30 
+BeansStew_&_Plantain	   20 
+Boiled_Yam_&_Stew		   25 
+Kenkey			    20
+Fufu_&_Soup			     25
+Banku				    25
+Rice_Balls			   30 
+Spaghetti			    30
